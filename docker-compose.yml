@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - backend/.env
+    environment:
+      # In the single-container setup, frontend and backend share an origin,
+      # so this can just be the port you're publishing above.
+      - ALLOWED_ORIGIN=http://localhost:8000

@@ -1,0 +1,34 @@
+# --- Secrets (critical — never commit these) ---
+.env
+.env.local
+**/.env
+**/.env.local
+
+# --- Python (backend) ---
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.db
+elevatr.db
+
+# --- Node (frontend) ---
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+*.log
+npm-debug.log*
+
+# --- Docker ---
+*.pid
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- AWS (just in case you ever run aws configure inside the project) ---
+.aws/
