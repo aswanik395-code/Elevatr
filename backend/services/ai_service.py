@@ -11,7 +11,7 @@ from prompts.internship_recommendation import build_recommendation_prompt
 
 # Solid general-purpose model on Groq's free tier — fast + good instruction
 # following for structured JSON output.
-MODEL_NAME = "llama-3.3-70b-versatile"
+MODEL_NAME = "openai/gpt-oss-120b"
 
 
 class AIAnalysisError(Exception):
