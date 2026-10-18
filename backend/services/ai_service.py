@@ -23,7 +23,7 @@ class AIChatError(Exception):
 
 
 def _get_client() -> Groq:
-    api_key = os.environ.get("GROQ_API_KEY")
+    api_key = (os.environ.get("GROQ_API_KEY") or "").strip().strip('"').strip("'")
     if not api_key or api_key == "your_key_here":
         raise AIAnalysisError(
             "GROQ_API_KEY is not set. Add it to backend/.env (see .env.example)."
