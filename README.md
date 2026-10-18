@@ -22,7 +22,7 @@ access to a streaming career-advice chatbot — all backed by a live LLM.
 | Frontend | React (Vite) + Tailwind CSS |
 | Backend | FastAPI (Python) |
 | Database | SQLite via SQLAlchemy |
-| AI | Groq API (Llama 3.3 70B), streamed token-by-token |
+| AI |  Groq API (GPT-OSS 120B), streamed token-by-token |
 | Auth | JWT |
 | Containerization | Single multi-stage Dockerfile (frontend built + served by the backend) |
 | Deployment | Docker container deployed to Render |
